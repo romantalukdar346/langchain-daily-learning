@@ -22,36 +22,35 @@ This repository includes hands-on practice, structured examples, and notes as I 
 
 ## 📁 Project Structure
 
-LANGCHAIN_MODELS/
-├── 1.LLMs/ # Experiments with LLMs (e.g., OpenAI, HuggingFace)
-├── 2.ChatModels/ # Conversational model usage
-├── 3.EmbeddingModels/ # Embedding generation & vector store usage
-
-├── Chain/
-│ ├── Runnables/ # LCEL-based runnable examples
-│ ├── conditional_chain.py
-│ ├── parallel_chain.py
-│ └── sequential_chain.py
-
-├── LangChain/ # Generic utils or wrappers (if any)
-
-├── Output/
-│ └── Parsers/
-│ └── structured_output.py # Output formatting examples
-
-├── Prompt/
-│ ├── 1_prompt_ui.py
-│ ├── 2_Dynamic_prompt.py
-│ ├── prompt_template.json
-│ ├── chat_prompt_temp.py
-│ ├── chatbot.py
-│ ├── prompt_generator.py
-│ ├── messages.py
-│ └── sms_placeholder.py
-
-├── chat_history.txt # Sample saved chat
-├── .env # Environment variables (ignored in Git)
-├── requirements.txt # Dependencies
+| Path                       | Description                                       |
+| -------------------------- | ------------------------------------------------- |
+| `1.LLMs/`                  | Experiments with LLMs (e.g., OpenAI, HuggingFace) |
+| `2.ChatModels/`            | Conversational model usage                        |
+| `3.EmbeddingModels/`       | Embedding generation & vector store usage         |
+|                            |                                                   |
+| `Chain/`                   | Chain logic and flow examples                     |
+| ├── `Runnables/`           | LCEL-based runnable examples                      |
+| ├── `conditional_chain.py` | If/else logic using RunnableBranch                |
+| ├── `parallel_chain.py`    | Parallel chain execution                          |
+| └── `sequential_chain.py`  | Simple sequential flow                            |
+|                            |                                                   |
+| `LangChain/`               | Generic utilities or wrappers (if any)            |
+|                            |                                                   |
+| `Output/Parsers/`          |                                                   |
+| └── `structured_output.py` | Output formatting using parsers                   |
+|                            |                                                   |
+| `Prompt/`                  | Prompt engineering and generation                 |
+| ├── `1_prompt_ui.py`       | Prompt interface example                          |
+| ├── `2_Dynamic_prompt.py`  | Dynamic prompt construction                       |
+| ├── `prompt_template.json` | Template configuration (JSON)                     |
+| ├── `chat_prompt_temp.py`  | Chat prompt example                               |
+| ├── `chatbot.py`           | Basic chatbot script                              |
+| ├── `prompt_generator.py`  | Prompt generation tool                            |
+| ├── `messages.py`          | Message formatting                                |
+| └── `sms_placeholder.py`   | Placeholder SMS prompt                            |
+|                            |                                                   |
+| `.env`                     | Environment variables (API keys, etc.)            |
+| `requirements.txt`         | Python dependencies                               |
 
 ```bash
 # Create and activate virtual environment (optional)
