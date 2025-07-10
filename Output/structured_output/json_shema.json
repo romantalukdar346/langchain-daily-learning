@@ -1,0 +1,12 @@
+{
+    "title": "Structured Output Schema",
+    "description": "Schema for structured output in JSON format",
+    "type": "object",
+    "properties": {
+        "name": "string",
+        "age": "integer",
+        "email": "string"
+        },
+    "required": ["name", "age", "email"]
+
+}

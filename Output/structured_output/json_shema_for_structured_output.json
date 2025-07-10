@@ -1,0 +1,49 @@
+{
+   "title": "Review",
+   "type": "object",
+
+   "proparties":{
+            "Key_themes":{
+                "type": "array",
+                "items":{
+                    "type":"string"
+                    }
+                },
+    
+            "summary":{
+                "type": "string",
+                "description": "A brief summary of the review"
+                },
+
+            "sentiment":{
+                "type": "string",
+                "enum": ["positive", "negative"],
+                "description": "Overall sentiment of the review"
+                },
+
+            "pros":{
+                "type": ["array", "null"],
+                "items":{
+                    "type": "string",
+                    "description": "List of positive aspects mentioned in the review"
+                    }
+                },
+
+            "cons":{
+                "type": ["array", "null"],
+                "items":{
+                    "type": "string",
+                    "description": "List of negative aspects mentioned in the review"
+                    }
+                },
+
+            "name":{
+                "type": ["string", "null"],
+                "description": "Name of the reviewer",
+                "default": "Roman"
+                }
+
+    },
+    "requeired": ["Key_themes", "summary", "sentiment","name"]
+}
+
