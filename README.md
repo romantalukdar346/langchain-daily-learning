@@ -4,7 +4,16 @@ Welcome to my daily learning journal with [LangChain](https://www.langchain.com/
 This repository includes hands-on practice, structured examples, and notes as I explore the core components of LangChain using Python.
 
 ---
+# ** 🧪 Note on LLM Usage: Local Ollama 
+🧠 I'm using Ollama to run LLMs locally for learning and experimentation.
 
+✅ Free and open-source — no API key required
+
+⚡ Runs models like LLaMA 3.2, Phi3: mini, Gemma locally
+
+🛠️ Helps me learn LangChain LLM integration more efficiently and without cost barriers
+
+---
 ## 🧠 Topics Covered
 
 - ✅ LLMs vs ChatModels in LangChain
@@ -17,10 +26,7 @@ This repository includes hands-on practice, structured examples, and notes as I 
 
 ---
 
-## 🚀 How to Run Locally
-
-
-## 📁 Project Structure
+## 📁 File Structure
 
 | Path                       | Description                                       |
 | -------------------------- | ------------------------------------------------- |
@@ -52,6 +58,7 @@ This repository includes hands-on practice, structured examples, and notes as I 
 | `.env`                     | Environment variables (API keys, etc.)            |
 | `requirements.txt`         | Python dependencies                               |
 
+# ⚙️ How to Run Locally
 ```bash
 # Create and activate virtual environment (optional)
 python -m venv venv
@@ -62,4 +69,17 @@ pip install -r requirements.txt
 
 # Run a specific example
 python Chain/sequential_chain.py
+```
+# 🛠️ Ollama Setup (Local LLMs)
+```bash
+# Install Ollama
+curl -fsSL https://ollama.com/install.sh | sh
 
+# Optional: Add to PATH if needed (uncomment and adjust if necessary)
+# export PATH="$HOME/.ollama/bin:$PATH"
+
+# Pull the LLaMA 3.2 model
+ollama pull llama3.2
+
+# Run the model
+ollama run llama3.2
